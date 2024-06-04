@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Youtube </>
+    </title>
+
+    <meta property="og:title" content="Youtube Channel => https://youtube.com/@endhargee">
+    <meta property="og:description" content="OK">
+
+    <link rel="shortcut icon" href="https://static.thenounproject.com/png/258144-200.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="/assets/css/kaso.css">
+</head>
+
+
+<body>
+    <div class="loading">
+        <div class="spinner">
+            <div class="test1"></div>
+            <div class="test2"></div>
+        </div>
+        <div class="center">Loading...</div>
+    </div>
+
+<div class="product-list-container">
+  <div class="product-card">
+    <img src="/assets/images/lost.jpg" alt="Product Name">
+    <h3 class="product-title">Product Name</h3>
+    <p class="product-description">Product description goes here.</p>
+    <p class="product-price">$10.00</p>
+  </div>
+  <!-- Add more product card elements here as needed -->
+</div>
+
+    <div class="module hidden">
+        <header>
+            <div class="mm">
+                <img class="mm_pic" src="/assets/images/lost.png" alt="lost_Img">
+                <div class="ava_h">
+                    <p>â€¢ Berliano </p>
+                    <p>â€¢ Instagram @endharge</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- <div class="module-card">
+                <h2>soon</h2>
+                <button class="module-button">About the soon</button>
+                <div class="module-info hidden">
+                    <p>ðŸ’¡soon.</p>
+                    <button class="copy-button"
+                        onclick="copyText('.dlmod https://raw.com')">ðŸ’¡Download</button>
+                    <div class="copy-notification">Successfully copied</div>
+                </div>
+            </div> -->
+
+    </div>
+    </main>
+
+    <footer>
+        <p class="center">Â© 2024-2025 Berliano, developed by berlianoel</p>
+    </footer>
+    <script>
+        function showModules() {
+            const loadingContainer = document.querySelector('.loading');
+            const moduleContainer = document.querySelector('.module');
+
+            loadingContainer.style.display = 'none';
+            moduleContainer.style.display = 'block';
+        }
+
+        setTimeout(showModules, 1500);
+
+
+        const moduleButtons = document.querySelectorAll('.module-button');
+        moduleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const moduleInfo = button.nextElementSibling;
+                moduleInfo.classList.toggle('hidden');
+            });
+        });
+
+
+        document.addEventListener('click', function (event) {
+            if (event.target.classList.contains('copy-button')) {
+                var text = event.target.getAttribute('data-copy-text');
+                copyText(text);
+            }
+        });
+
+
+        function copyText(text) {
+            var input = document.createElement('input');
+            input.value = text;
+            document.body.appendChild(input);
+
+            input.select();
+            document.execCommand('copy');
+
+            document.body.removeChild(input);
+
+            var notification = document.querySelector('.copy-notification');
+            notification.classList.add('show');
+
+            setTimeout(function () {
+                notification.classList.remove('show');
+            }, 2000);
+        }
+    </script>
+
+    <!-- <script src="/assets/js/script.js"></script> -->
+    <!-- </div> -->
+
+</body>
+
+  </html>
