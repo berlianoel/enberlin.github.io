@@ -1,120 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Youtube </>
-    </title>
-
-    <meta property="og:title" content="Youtube Channel => https://youtube.com/@endhargee">
-    <meta property="og:description" content="OK">
-
-    <link rel="shortcut icon" href="https://static.thenounproject.com/png/258144-200.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="/asset/css/kaso.css">
-</head>
-
-
-<body>
-    <div class="loading">
-        <div class="spinner">
-            <div class="test1"></div>
-            <div class="test2"></div>
-        </div>
-        <div class="center">Loading...</div>
-    </div>
-
-<div class="product-list-container">
-  <div class="product-card">
-    <img src="/asset/image/lost.jpg" alt="Product Name">
-    <h3 class="product-title">Product Name</h3>
-    <p class="product-description">Product description goes here.</p>
-    <p class="product-price">$10.00</p>
+<div class="card">
+  <div class="image_container">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="image">
+      <path
+        d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+      ></path>
+    </svg>
   </div>
-  <!-- Add more product card elements here as needed -->
-</div>
-
-    <div class="module hidden">
-        <header>
-            <div class="mm">
-                <img class="mm_pic" src="/asset/image/lost.png" alt="lost_Img">
-                <div class="ava_h">
-                    <p>â€¢ Berliano </p>
-                    <p>â€¢ Instagram @endharge</p>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <!-- <div class="module-card">
-                <h2>soon</h2>
-                <button class="module-button">About the soon</button>
-                <div class="module-info hidden">
-                    <p>ðŸ’¡soon.</p>
-                    <button class="copy-button"
-                        onclick="copyText('.dlmod https://raw.com')">ðŸ’¡Download</button>
-                    <div class="copy-notification">Successfully copied</div>
-                </div>
-            </div> -->
-
-    </div>
-    </main>
-
-    <footer>
-        <p class="center">Â© 2024-2025 Berliano, developed by berlianoel</p>
-    </footer>
-    <script>
-        function showModules() {
-            const loadingContainer = document.querySelector('.loading');
-            const moduleContainer = document.querySelector('.module');
-
-            loadingContainer.style.display = 'none';
-            moduleContainer.style.display = 'block';
-        }
-
-        setTimeout(showModules, 1500);
-
-
-        const moduleButtons = document.querySelectorAll('.module-button');
-        moduleButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const moduleInfo = button.nextElementSibling;
-                moduleInfo.classList.toggle('hidden');
-            });
-        });
-
-
-        document.addEventListener('click', function (event) {
-            if (event.target.classList.contains('copy-button')) {
-                var text = event.target.getAttribute('data-copy-text');
-                copyText(text);
-            }
-        });
-
-
-        function copyText(text) {
-            var input = document.createElement('input');
-            input.value = text;
-            document.body.appendChild(input);
-
-            input.select();
-            document.execCommand('copy');
-
-            document.body.removeChild(input);
-
-            var notification = document.querySelector('.copy-notification');
-            notification.classList.add('show');
-
-            setTimeout(function () {
-                notification.classList.remove('show');
-            }, 2000);
-        }
-    </script>
-
-    <!-- <script src="/assets/js/script.js"></script> -->
-    <!-- </div> -->
-
-</body>
-
-  </html>
+  <div class="title">
+    <span>New brand name</span>
+    </ul>
+  </div>
+  <div class="action">
+    <div class="price">
+      <span>$299</span>
+  </div>
+  </div>
+  
