@@ -1,4 +1,66 @@
-.product-list-container {
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+body {
+    font-family: 'Hubballi';
+    background-color: rgb(92, 88, 88);
+    color: rgb(252, 252, 252);
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    -webkit-animation: rotate 2.0s infinite linear;
+    animation: rotate 2.0s infinite linear;
+}
+
+.test1,
+.test2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+
+.test2 {
+    top: auto;
+    bottom: 0px;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.mm {
+    display: flex;
+    flex-direction: row;
+}
+
+.mm_pic {
+    height: 100px;
+    width: 100px;
+    background: rgba(153, 58, 58, 0.063);
+    border-radius: 100px;
+    border-color: rgb(0, 123, 255);
+}
+
+.ava_h {
+    font-size: 22px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+ .product-list-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
